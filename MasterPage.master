@@ -1,0 +1,159 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .newStyle1 {
+            background-image: url('/sol.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        .newStyle2 {
+            background-image: url('/sistema-solar.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        .newStyle3 {
+            background-image: url('/cosmos.jpeg');
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        .auto-style1 {
+            width: 100%;
+            padding-left: 50px;
+            left: -2px;
+            height: 38px;
+        }
+        .auto-style2 {
+            height: 205px;
+            
+        }
+        .auto-style3 {
+            height: 23px;
+          
+        }
+        .auto-style4 {
+            height: 154px;
+        }
+        .auto-style6 {
+            font-size: xx-large;
+        }
+        .auto-style6 {
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+        .newStyle4 {
+            margin: auto 0px auto auto;
+            padding-top: inherit;
+            padding-right: 0px;
+            padding-bottom: inherit;
+            padding-left: 50px;
+        }
+        .auto-style6 {
+            padding-left: 17px;
+        }
+        .auto-style6 {
+            font-weight: bold;
+            border-style: solid;
+            border-width: thick 1px 1px 1px;
+            list-style-type: georgian;
+            list-style-image: none;
+            border-spacing: 1px;
+            border-collapse: collapse;
+            table-layout: auto;
+        }
+        .newStyle5 {
+            border: 1px solid grey;
+            text-align: center;
+        }
+        
+        .auto-style8 {
+            height: 134px;
+        }
+        
+        .auto-style9 {
+            width: 80%;
+        }
+        .auto-style10 {
+            text-align: center;
+            table-layout: auto;
+            top: 742px;
+            position: relative;
+            z-index: auto;
+            bottom: 3px;
+            left: -2px;
+            width: 641px;
+        }
+        
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    </div>
+        <table class="auto-style1" style="border-collapse: collapse; table-layout: auto; border-spacing: 2px; position: relative; width: auto; top: 3px; right: -2px; bottom: -3px; left: 2px">
+            <tr>
+                <td class="auto-style2" colspan="4" style="background-image: none; background-position: 30px 0px; background-repeat: no-repeat; background-attachment: inherit;">
+                    <asp:Image ID="Image1" runat="server" Height="200px" ImageAlign="Middle" ImageUrl="~/cosmos.jpeg" Width="1366px" />
+                </td>
+            </tr>
+            <tr class="newStyle5">
+                <td class="auto-style3" colspan="4">
+                   
+                    <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6"  CssClass="auto-style6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="1em" ForeColor="#990000" Orientation="Horizontal" StaticSubMenuIndent="10px" Height="50px" Width="1345px">
+                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Inicio " Value="Inicio"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Seccion1.aspx" Text="Tierra " Value="Tierra"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Seccion2.aspx" Text="Sol " Value="Sol"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Seccion3.aspx" Text="Sistema Solar " Value="Sistema Solar"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/About.aspx" Text="Acerca de Nosotros" Value="Acerca de Nosotros"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="35px" VerticalPadding="2px" />
+                        <StaticSelectedStyle BackColor="#FFCC66" />
+                        <StaticItemTemplate>
+                            <%# Eval("Text") %>
+                        </StaticItemTemplate>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4" colspan="2" style="width: 200px">
+                    <asp:ImageButton ID="ImageButton1" runat="server" BorderStyle="None" DescriptionUrl="~/Seccion1.aspx" Height="150px" ImageAlign="Middle" ImageUrl="~/Tierra.jpg" PostBackUrl="~/Seccion1.aspx" Width="200px" />
+                </td>
+                <td colspan="2" rowspan="3" style="Width: 80%;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <h1 id="firstHeading" class="firstHeading" lang="es" style="color: rgb(0, 0, 0); margin: 0px 0px 0.25em; padding: 0px; overflow: visible; border-bottom: 1px solid rgb(162, 169, 177); font-size: 1.8em; font-weight: normal; font-family: &quot;Linux Libertine&quot;, Georgia, Times, serif; line-height: 1.3; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; height: 37px;">&nbsp;</h1>
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4" colspan="2" style="width: 200px">
+                    <asp:ImageButton ID="ImageButton2" runat="server" Height="150px" ImageAlign="Middle" ImageUrl="~/sol.jpg" PostBackUrl="~/Seccion2.aspx" Width="200px" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="auto-style8" style="width: 200px">
+                    <asp:ImageButton ID="ImageButton3" runat="server" Height="150px" ImageUrl="~/sistema-solar.jpg" PostBackUrl="~/Seccion3.aspx" Width="200px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style9"></td>
+            </tr>
+            <tr>
+                <td class="auto-style10" style="table-layout: auto; caption-side: inherit; position: absolute; height: auto; width: 1366px;"> Proyecto Final - Práctica Profesionalizante II  /  Email: arg_87_int@hotmail.com  /  Copyright 2020 RaGlanzel </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
